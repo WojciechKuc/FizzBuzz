@@ -1,0 +1,20 @@
+body{
+	background-color: black;
+}
+
+#fizzbuzz{
+	color: white;
+}
+
+.step{
+	color: green;
+}
+.fizzbuzz{
+	color: red;
+}
+.fizz{
+	color: blue;
+}
+.buzz{
+	color: yellow;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>FIZZ BUZZ</title>
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+
+<p id="fizzbuzz">WELCOME TO FIZZBUZZ</p>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script>
+  var step;
+	for (step = 1; step <= 100; step++) {
+		
+		if (step%3==0 && step%5==0){
+			console.log("fizzbuzz");
+			  var number = document.createElement("p");
+			  number.className = "fizzbuzz";
+			  number.innerHTML = 'fizzbuzz';
+			  document.body.appendChild(number);}
+		
+		else if (step%3==0)
+			{
+			console.log("fizz");
+			  var number = document.createElement("p");
+			  number.className = "fizz";
+			  number.innerHTML = 'fizz';
+			  document.body.appendChild(number);}
+		
+		else if (step%5==0){
+			console.log("buzz");
+			  var number = document.createElement("p");
+			  number.className = "buzz";
+			  number.innerHTML = "buzz";
+			  document.body.appendChild(number);
+			}
+		
+		else{
+			console.log(step);
+			  var number = document.createElement("p");
+			  number.className = "step";
+			  number.innerHTML = step;
+			  document.body.appendChild(number);}
+}
+  </script>
+</body>
+</html>
